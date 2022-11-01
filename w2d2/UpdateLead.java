@@ -67,7 +67,7 @@ public class UpdateLead {
 		System.out.println("New Company name: " +NewCompanyname);
 		System.out.println("Updated Company name: " +Updatedname);
 		
-		if (NewCompanyname.contains(Updatedname))
+		if (NewCompanyname.contains("DEF"))
 		{
 			System.out.println("New compant name is updated");
 		}
