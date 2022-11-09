@@ -1,30 +1,27 @@
 package w3d2;
 
-public class Automation extends MultipleLanguage {
-
-	public void Java() {
-		System.out.println("Java");
-		
-	}
-	
-  public void Selenium() {
-	  System.out.println("Selenium");
-	
- }
+public class Automation extends MultipleLanguage implements Language , TestTool{
 
 	@Override
-	public void ruby() {
+	void ruby() {
 		System.out.println("ruby");
 		
 	}
 
+	public void Java() {
+		System.out.println("java");		
+	}
+
+	public void Selenium() {
+			System.out.println("selenium");	
+	}
+	
 	public static void main(String[] args) {
-		
-		Automation execution = new Automation();
-		execution.Java();
-		execution.Selenium();
-		execution.python();
-		execution.ruby();
-		
-	}	
+		Automation p = new Automation();
+		p.Java();
+		p.Selenium();
+		p.python();
+		p.ruby();
+	}
+
 }
